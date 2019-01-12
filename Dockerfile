@@ -1,4 +1,4 @@
-FROM linuxserver/radarr:latest
+FROM linuxserver/radarr:nightly
 
 RUN \
   apt-get update && \
