@@ -33,9 +33,12 @@ RUN \
   git clone git://github.com/mdhiggins/sickbeard_mp4_automator.git /sickbeard_mp4_automator/ && \
   touch /sickbeard_mp4_automator/info.log && \
   chmod a+rwx -R /sickbeard_mp4_automator && \
+  mkdir /var/log/sickbeard_mp4_automator && \
+  chmod 777 -R /var/log/sickbeard_mp4_automator && \
   ln -s /downloads /data && \
   ln -s /config_mp4_automator/autoProcess.ini /sickbeard_mp4_automator/autoProcess.ini && \
   rm -rf \
 	/tmp/* \
 	/var/lib/apt/lists/* \
 	/var/tmp/*
+	
