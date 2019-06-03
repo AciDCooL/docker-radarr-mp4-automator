@@ -1,4 +1,4 @@
-FROM linuxserver/radarr:preview
+FROM linuxserver/radarr:nightly
 
 RUN \
   apt-get update && \
